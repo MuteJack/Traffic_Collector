@@ -63,8 +63,19 @@ def collect_release_downloads(owner, repo):
 def main():
   for full in TARGET_REPOS:
     owner, repo = full.split("/", 1)
-    collect_traffic(owner, repo)
-    collect_release_downloads(owner, repo)
+    print(f"Processing {owner}/{repo}...")
+
+    try:
+      collect_traffic(owner, repo)
+      print(f"  Traffic data collected")
+    except Exception as e:
+      print(f"  Warning: Failed to collect traffic - {e}")
+
+    try:
+      collect_release_downloads(owner, repo)
+      print(f"  Release data collected")
+    except Exception as e:
+      print(f"  Warning: Failed to collect releases - {e}")
 
 if __name__ == "__main__":
   main()
