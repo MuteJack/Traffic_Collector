@@ -1,4 +1,4 @@
-import os, csv, json, datetime, requests
+import os, csv, datetime, requests
 
 GH_TOKEN = os.environ["GH_TOKEN"]
 TARGET_REPOS = [x.strip() for x in os.environ["TARGET_REPOS"].split(",") if x.strip()]
@@ -15,7 +15,18 @@ def get(url):
   return r.json()
 
 def utc_today():
-  return datetime.datetime.utcnow().date().isoformat()  # YYYY-MM-DD
+  return datetime.datetime.utcnow().date().isoformat()
+
+def load_existing_keys(path, key_fields):
+  """Load existing (date, repo, ...) combinations from CSV to avoid duplicates."""
+  keys = set()
+  if os.path.exists(path):
+    with open(path, "r", newline="", encoding="utf-8") as f:
+      reader = csv.DictReader(f)
+      for row in reader:
+        key = tuple(row.get(k, "") for k in key_fields)
+        keys.add(key)
+  return keys
 
 def append_csv(path, fieldnames, row):
   os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -25,55 +36,75 @@ def append_csv(path, fieldnames, row):
     if not exists: w.writeheader()
     w.writerow(row)
 
-def collect_traffic(owner, repo):
-  # views/visitors last 14 days
+def collect_traffic(owner, repo, existing_keys):
+  """Collect all available traffic data (up to 14 days) and backfill missing dates."""
   views = get(f"https://api.github.com/repos/{owner}/{repo}/traffic/views")
-  # {"count":..,"uniques":..,"views":[{"timestamp":"...","count":..,"uniques":..}, ...]}
-  # pick today's bucket (UTC aligned)
-  today = utc_today()
-  todays = None
+  repo_full = f"{owner}/{repo}"
+  added = 0
+
   for v in views.get("views", []):
-    if v["timestamp"].startswith(today):
-      todays = v
-      break
-  if not todays:
-    # if no bucket yet (repo inactive), treat as 0
-    todays = {"count": 0, "uniques": 0}
+    # timestamp format: "2025-02-03T00:00:00Z"
+    date = v["timestamp"][:10]
+    key = (date, repo_full)
 
-  append_csv(
-    "stats/traffic_daily.csv",
-    ["date","repo","views","unique_visitors"],
-    {"date": today, "repo": f"{owner}/{repo}", "views": todays["count"], "unique_visitors": todays["uniques"]}
-  )
+    if key in existing_keys:
+      continue
 
-def collect_release_downloads(owner, repo):
+    append_csv(
+      "stats/traffic_daily.csv",
+      ["date","repo","views","unique_visitors"],
+      {"date": date, "repo": repo_full, "views": v["count"], "unique_visitors": v["uniques"]}
+    )
+    existing_keys.add(key)
+    added += 1
+
+  return added
+
+def collect_release_downloads(owner, repo, existing_keys):
+  """Collect release download counts, avoiding duplicates."""
   releases = get(f"https://api.github.com/repos/{owner}/{repo}/releases?per_page=100")
   today = utc_today()
+  repo_full = f"{owner}/{repo}"
+  added = 0
 
   for rel in releases:
     tag = rel.get("tag_name","")
     for a in rel.get("assets", []):
+      asset_name = a.get("name","")
+      key = (today, repo_full, tag, asset_name)
+
+      if key in existing_keys:
+        continue
+
       append_csv(
         "stats/releases_daily.csv",
         ["date","repo","tag","asset_name","download_count"],
-        {"date": today, "repo": f"{owner}/{repo}", "tag": tag,
-         "asset_name": a.get("name",""), "download_count": a.get("download_count",0)}
+        {"date": today, "repo": repo_full, "tag": tag,
+         "asset_name": asset_name, "download_count": a.get("download_count",0)}
       )
+      existing_keys.add(key)
+      added += 1
+
+  return added
 
 def main():
+  # Load existing data to prevent duplicates
+  traffic_keys = load_existing_keys("stats/traffic_daily.csv", ["date", "repo"])
+  release_keys = load_existing_keys("stats/releases_daily.csv", ["date", "repo", "tag", "asset_name"])
+
   for full in TARGET_REPOS:
     owner, repo = full.split("/", 1)
     print(f"Processing {owner}/{repo}...")
 
     try:
-      collect_traffic(owner, repo)
-      print(f"  Traffic data collected")
+      added = collect_traffic(owner, repo, traffic_keys)
+      print(f"  Traffic: {added} new records")
     except Exception as e:
       print(f"  Warning: Failed to collect traffic - {e}")
 
     try:
-      collect_release_downloads(owner, repo)
-      print(f"  Release data collected")
+      added = collect_release_downloads(owner, repo, release_keys)
+      print(f"  Releases: {added} new records")
     except Exception as e:
       print(f"  Warning: Failed to collect releases - {e}")
 
