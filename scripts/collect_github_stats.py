@@ -1,4 +1,5 @@
-import os, csv, datetime, requests
+import os, csv, json, datetime, requests
+from collections import defaultdict
 from urllib.parse import urlparse
 
 GH_TOKEN = os.environ["GH_TOKEN"]
@@ -138,6 +139,119 @@ COLLECTORS = [
   ("Releases",  "stats/releases_daily.csv",     ["date","repo","tag","asset_name"], collect_releases),
 ]
 
+def read_csv(path):
+  """Read all rows from a CSV file."""
+  if not os.path.exists(path):
+    return []
+  with open(path, "r", newline="", encoding="utf-8") as f:
+    return list(csv.DictReader(f))
+
+def write_csv(path, fieldnames, rows):
+  """Overwrite a CSV file with sorted rows."""
+  os.makedirs(os.path.dirname(path), exist_ok=True)
+  with open(path, "w", newline="", encoding="utf-8") as f:
+    w = csv.DictWriter(f, fieldnames=fieldnames)
+    w.writeheader()
+    w.writerows(rows)
+
+def generate_summary():
+  """Generate per-repo cumulative totals → stats/summary.csv"""
+  totals = defaultdict(lambda: {"total_views":0, "total_unique_visitors":0,
+    "total_clones":0, "total_unique_cloners":0, "total_downloads":0, "last_date":""})
+
+  for row in read_csv("stats/traffic_views.csv"):
+    r = totals[row["repo"]]
+    r["total_views"] += int(row.get("views",0))
+    r["total_unique_visitors"] += int(row.get("unique_visitors",0))
+    r["last_date"] = max(r["last_date"], row["date"])
+
+  for row in read_csv("stats/traffic_clones.csv"):
+    r = totals[row["repo"]]
+    r["total_clones"] += int(row.get("clones",0))
+    r["total_unique_cloners"] += int(row.get("unique_cloners",0))
+    r["last_date"] = max(r["last_date"], row["date"])
+
+  for row in read_csv("stats/releases_daily.csv"):
+    r = totals[row["repo"]]
+    r["total_downloads"] += int(row.get("download_count",0))
+    r["last_date"] = max(r["last_date"], row["date"])
+
+  fields = ["repo","total_views","total_unique_visitors","total_clones","total_unique_cloners","total_downloads","last_date"]
+  rows = [{"repo": repo, **vals} for repo, vals in sorted(totals.items())]
+  write_csv("stats/summary.csv", fields, rows)
+  print(f"Summary: {len(rows)} repos")
+
+def generate_monthly():
+  """Generate monthly aggregates → stats/monthly.csv"""
+  buckets = defaultdict(lambda: {"views":0, "unique_visitors":0, "clones":0, "unique_cloners":0, "downloads":0})
+
+  for row in read_csv("stats/traffic_views.csv"):
+    month = row["date"][:7]  # YYYY-MM
+    b = buckets[(row["repo"], month)]
+    b["views"] += int(row.get("views",0))
+    b["unique_visitors"] += int(row.get("unique_visitors",0))
+
+  for row in read_csv("stats/traffic_clones.csv"):
+    month = row["date"][:7]
+    b = buckets[(row["repo"], month)]
+    b["clones"] += int(row.get("clones",0))
+    b["unique_cloners"] += int(row.get("unique_cloners",0))
+
+  for row in read_csv("stats/releases_daily.csv"):
+    month = row["date"][:7]
+    b = buckets[(row["repo"], month)]
+    b["downloads"] += int(row.get("download_count",0))
+
+  fields = ["repo","month","views","unique_visitors","clones","unique_cloners","downloads"]
+  rows = [{"repo": k[0], "month": k[1], **v} for k, v in sorted(buckets.items())]
+  write_csv("stats/monthly.csv", fields, rows)
+  print(f"Monthly: {len(rows)} entries")
+
+def generate_json():
+  """Generate JSON for blog charts → stats/summary.json"""
+  data = {"generated": utc_today(), "repos": {}}
+
+  for row in read_csv("stats/summary.csv"):
+    repo = row["repo"]
+    data["repos"][repo] = {
+      "total_views": int(row.get("total_views",0)),
+      "total_unique_visitors": int(row.get("total_unique_visitors",0)),
+      "total_clones": int(row.get("total_clones",0)),
+      "total_unique_cloners": int(row.get("total_unique_cloners",0)),
+      "total_downloads": int(row.get("total_downloads",0)),
+      "daily_views": [],
+      "daily_clones": [],
+      "monthly": [],
+    }
+
+  for row in read_csv("stats/traffic_views.csv"):
+    repo = row["repo"]
+    if repo in data["repos"]:
+      data["repos"][repo]["daily_views"].append({
+        "date": row["date"], "views": int(row.get("views",0)),
+        "unique": int(row.get("unique_visitors",0))})
+
+  for row in read_csv("stats/traffic_clones.csv"):
+    repo = row["repo"]
+    if repo in data["repos"]:
+      data["repos"][repo]["daily_clones"].append({
+        "date": row["date"], "clones": int(row.get("clones",0)),
+        "unique": int(row.get("unique_cloners",0))})
+
+  for row in read_csv("stats/monthly.csv"):
+    repo = row["repo"]
+    if repo in data["repos"]:
+      data["repos"][repo]["monthly"].append({
+        "month": row["month"],
+        "views": int(row.get("views",0)),
+        "clones": int(row.get("clones",0)),
+        "downloads": int(row.get("downloads",0))})
+
+  os.makedirs("stats", exist_ok=True)
+  with open("stats/summary.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+  print(f"JSON: {len(data['repos'])} repos")
+
 def main():
   # Load existing keys for each CSV
   all_keys = {}
@@ -154,6 +268,12 @@ def main():
         print(f"  {name}: {added} new records")
       except Exception as e:
         print(f"  {name}: SKIP - {e}")
+
+  # Generate summaries
+  print("\nGenerating summaries...")
+  generate_summary()
+  generate_monthly()
+  generate_json()
 
 if __name__ == "__main__":
   main()
