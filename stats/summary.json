@@ -1,12 +1,12 @@
 {
-  "generated": "2026-02-13",
+  "generated": "2026-02-14",
   "repos": {
     "MuteJack/Diff_Patch_Generator": {
       "total_views": 0,
       "total_unique_visitors": 0,
       "total_clones": 0,
       "total_unique_cloners": 0,
-      "total_downloads": 6,
+      "total_downloads": 7,
       "daily_views": [],
       "daily_clones": [],
       "monthly": [
@@ -14,16 +14,16 @@
           "month": "2026-02",
           "views": 0,
           "clones": 0,
-          "downloads": 6
+          "downloads": 7
         }
       ]
     },
     "MuteJack/Mycopsychosys-UnOfficial-Patch": {
-      "total_views": 1193,
-      "total_unique_visitors": 159,
+      "total_views": 1203,
+      "total_unique_visitors": 165,
       "total_clones": 227,
       "total_unique_cloners": 139,
-      "total_downloads": 925,
+      "total_downloads": 1045,
       "daily_views": [
         {
           "date": "2026-01-24",
@@ -124,6 +124,11 @@
           "date": "2026-02-12",
           "views": 15,
           "unique": 8
+        },
+        {
+          "date": "2026-02-13",
+          "views": 10,
+          "unique": 6
         }
       ],
       "daily_clones": [
@@ -226,6 +231,11 @@
           "date": "2026-02-12",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-02-13",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -237,18 +247,18 @@
         },
         {
           "month": "2026-02",
-          "views": 1080,
+          "views": 1090,
           "clones": 162,
-          "downloads": 925
+          "downloads": 1045
         }
       ]
     },
     "MuteJack/Mycopsychosys-UnOfficial_Korean_Translation": {
-      "total_views": 286,
-      "total_unique_visitors": 62,
+      "total_views": 289,
+      "total_unique_visitors": 64,
       "total_clones": 93,
       "total_unique_cloners": 73,
-      "total_downloads": 36,
+      "total_downloads": 39,
       "daily_views": [
         {
           "date": "2026-01-24",
@@ -349,6 +359,11 @@
           "date": "2026-02-12",
           "views": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-02-13",
+          "views": 3,
+          "unique": 2
         }
       ],
       "daily_clones": [
@@ -451,6 +466,11 @@
           "date": "2026-02-12",
           "clones": 1,
           "unique": 1
+        },
+        {
+          "date": "2026-02-13",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -462,9 +482,9 @@
         },
         {
           "month": "2026-02",
-          "views": 266,
+          "views": 269,
           "clones": 66,
-          "downloads": 36
+          "downloads": 39
         }
       ]
     }
