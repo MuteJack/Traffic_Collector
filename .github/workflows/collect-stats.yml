@@ -24,7 +24,11 @@ jobs:
       - name: collect
         env:
           GH_TOKEN: ${{ secrets.STATS_PAT }}
-          TARGET_REPOS: "MuteJack/Mycopsychosys-UnOfficial-Patch,MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,https://github.com/MuteJack/Diff_Patch_Generator"
+          TARGET_REPOS: >-
+            MuteJack/Mycopsychosys-UnOfficial-Patch,
+            MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,
+            MuteJack/Diff_Patch_Generator,
+            MuteJack/MuckKorean
           BACKFILL_DAYS: "14"
         run: python scripts/collect_github_stats.py
 
