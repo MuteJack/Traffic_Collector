@@ -1,12 +1,12 @@
 {
-  "generated": "2026-02-23",
+  "generated": "2026-02-24",
   "repos": {
     "MuteJack/Diff_Patch_Generator": {
       "total_views": 0,
       "total_unique_visitors": 0,
       "total_clones": 0,
       "total_unique_cloners": 0,
-      "total_downloads": 16,
+      "total_downloads": 17,
       "daily_views": [],
       "daily_clones": [],
       "monthly": [
@@ -14,7 +14,7 @@
           "month": "2026-02",
           "views": 0,
           "clones": 0,
-          "downloads": 16
+          "downloads": 17
         }
       ]
     },
@@ -23,7 +23,7 @@
       "total_unique_visitors": 0,
       "total_clones": 0,
       "total_unique_cloners": 0,
-      "total_downloads": 10,
+      "total_downloads": 12,
       "daily_views": [],
       "daily_clones": [],
       "monthly": [
@@ -31,16 +31,16 @@
           "month": "2026-02",
           "views": 0,
           "clones": 0,
-          "downloads": 10
+          "downloads": 12
         }
       ]
     },
     "MuteJack/Mycopsychosys-UnOfficial-Patch": {
-      "total_views": 1318,
-      "total_unique_visitors": 193,
+      "total_views": 1322,
+      "total_unique_visitors": 196,
       "total_clones": 255,
       "total_unique_cloners": 156,
-      "total_downloads": 2293,
+      "total_downloads": 2437,
       "daily_views": [
         {
           "date": "2026-01-24",
@@ -191,6 +191,11 @@
           "date": "2026-02-22",
           "views": 6,
           "unique": 5
+        },
+        {
+          "date": "2026-02-23",
+          "views": 4,
+          "unique": 3
         }
       ],
       "daily_clones": [
@@ -343,6 +348,11 @@
           "date": "2026-02-22",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-02-23",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -354,18 +364,18 @@
         },
         {
           "month": "2026-02",
-          "views": 1205,
+          "views": 1209,
           "clones": 190,
-          "downloads": 2293
+          "downloads": 2437
         }
       ]
     },
     "MuteJack/Mycopsychosys-UnOfficial_Korean_Translation": {
-      "total_views": 320,
-      "total_unique_visitors": 75,
+      "total_views": 322,
+      "total_unique_visitors": 77,
       "total_clones": 93,
       "total_unique_cloners": 73,
-      "total_downloads": 66,
+      "total_downloads": 69,
       "daily_views": [
         {
           "date": "2026-01-24",
@@ -516,6 +526,11 @@
           "date": "2026-02-22",
           "views": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-02-23",
+          "views": 2,
+          "unique": 2
         }
       ],
       "daily_clones": [
@@ -668,6 +683,11 @@
           "date": "2026-02-22",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-02-23",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -679,9 +699,9 @@
         },
         {
           "month": "2026-02",
-          "views": 300,
+          "views": 302,
           "clones": 66,
-          "downloads": 66
+          "downloads": 69
         }
       ]
     }
