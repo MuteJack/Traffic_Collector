@@ -24,13 +24,23 @@ jobs:
       - name: collect
         env:
           GH_TOKEN: ${{ secrets.STATS_PAT }}
+          # Personal Repos / # Personal Projects / # Game Mods / # Deprecated Projects
           TARGET_REPOS: >-
+            MuteJack/Traffic_Collector,
+            MuteJack/MuteJack.github.io,
+
             MuteJack/C_Percent_Language,
             MuteJack/PLC_Quence,
+
             MuteJack/Mycopsychosys-UnOfficial-Patch,
             MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,
+            MuteJack/MuckKorean,
+            MuteJack/LiveSplit.AutoSplitters,
+            MuteJack/EllsTalesChairbound-AutoSplitter,
+
             MuteJack/Diff_Patch_Generator,
-            MuteJack/MuckKorean
+            MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,
+            
           BACKFILL_DAYS: "14"
         run: python scripts/collect_github_stats.py
 
