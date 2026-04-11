@@ -1022,3 +1022,62 @@ date,repo,path,title,views,unique_visitors
 2026-04-10,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-/tree/main/CMD Batch (Short Macro),/tree/main/CMD Batch (Short Macro),1,1
 2026-04-10,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-/tree/main/ShortCuts (System Tools),/tree/main/ShortCuts (System Tools),1,1
 2026-04-10,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/mutejack/mutejack-s-batch-files,Overview,1,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector,Overview,22,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/actions,/actions,8,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/actions/runs/24132032444,/actions/runs/24132032444,8,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/actions/workflows/collect-stats.yml,/actions/workflows/collect-stats.yml,7,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/commits/main,/commits/main,7,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/blob/main/.github/workflows/collect-stats.yml,/blob/main/.github/workflows/collect-stats.yml,4,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/blob/main/stats/monthly.csv,/blob/main/stats/monthly.csv,4,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/commit/6e0c84545fa951b28b887508ca03f4b05f590b25,/commit/6e0c84545fa951b28b887508ca03f4b05f590b25,4,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/tree/main/stats,/tree/main/stats,4,1
+2026-04-11,MuteJack/Traffic_Collector,/MuteJack/Traffic_Collector/actions/runs/24131840945,/actions/runs/24131840945,3,1
+2026-04-11,MuteJack/C_Percent_Language,/MuteJack/C_Percent_Language,Overview,4,1
+2026-04-11,MuteJack/C_Percent_Language,/MuteJack/C_Percent_Language/community/license/new,/community/license/new,2,1
+2026-04-11,MuteJack/C_Percent_Language,/MuteJack/C_Percent_Language/graphs/traffic,/graphs/traffic,2,1
+2026-04-11,MuteJack/C_Percent_Language,/MuteJack/C_Percent_Language/blob/master/LICENSE.GPL3,/blob/master/LICENSE.GPL3,1,1
+2026-04-11,MuteJack/C_Percent_Language,/MuteJack/C_Percent_Language/blob/master/LICENSE.POLYFORM,/blob/master/LICENSE.POLYFORM,1,1
+2026-04-11,MuteJack/C_Percent_Language,/MuteJack/C_Percent_Language/edit/master/LICENSE.GPL3,/edit/master/LICENSE.GPL3,1,1
+2026-04-11,MuteJack/C_Percent_Language,/MuteJack/C_Percent_Language/edit/master/LICENSE.POLYFORM,/edit/master/LICENSE.POLYFORM,1,1
+2026-04-11,MuteJack/C_Percent_Language,/MuteJack/C_Percent_Language/pulse,/pulse,1,1
+2026-04-11,MuteJack/PLC_Quence,/MuteJack/PLC_Quence,Overview,1,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/releases,/releases,33,12
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/blob/v1.0.7/README_kor.md,/blob/v1.0.7/README_kor.md,5,3
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch,Overview,3,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/blob/master/README_kor.md,/blob/master/README_kor.md,2,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/tree/master/game,/tree/master/game,2,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/tree/v1.0.7/game,/tree/v1.0.7/game,2,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/blob/master/README.md,/blob/master/README.md,1,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/blob/master/README_eng.md,/blob/master/README_eng.md,1,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/blob/master/game/subtitle_standalone.rpy,/blob/master/game/subtitle_standalone.rpy,1,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial-Patch,/MuteJack/Mycopsychosys-UnOfficial-Patch/blob/master/game/tl/korean/MYCOPSYCHOSIS.vtt,/blob/master/game/tl/korean/MYCOPSYCHOSIS.vtt,1,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,/MuteJack/Mycopsychosys-UnOfficial_Korean_Translation/tree/main,/tree/main,4,2
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,/MuteJack/Mycopsychosys-UnOfficial_Korean_Translation/commits/main,/commits/main,2,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,/MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,Overview,1,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,/MuteJack/Mycopsychosys-UnOfficial_Korean_Translation/blob/main/.gitignore,/blob/main/.gitignore,1,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,/MuteJack/Mycopsychosys-UnOfficial_Korean_Translation/tree/main/game,/tree/main/game,1,1
+2026-04-11,MuteJack/Mycopsychosys-UnOfficial_Korean_Translation,/mutejack/mycopsychosys-unofficial_korean_translation/tree/main/game,/tree/main/game,1,1
+2026-04-11,MuteJack/MuckKorean,/MuteJack/MuckKorean,Overview,2,2
+2026-04-11,MuteJack/MuckKorean,/mutejack/muckkorean,Overview,1,1
+2026-04-11,MuteJack/LiveSplit.AutoSplitters,/MuteJack/LiveSplit.AutoSplitters/blob/master/LiveSplit.AutoSplitters.xml,/blob/master/LiveSplit.AutoSplitters.xml,5,1
+2026-04-11,MuteJack/LiveSplit.AutoSplitters,/MuteJack/LiveSplit.AutoSplitters/tree/master/.github,/tree/master/.github,4,1
+2026-04-11,MuteJack/LiveSplit.AutoSplitters,/MuteJack/LiveSplit.AutoSplitters,Overview,2,1
+2026-04-11,MuteJack/LiveSplit.AutoSplitters,/MuteJack/LiveSplit.AutoSplitters/blob/master/.editorconfig,/blob/master/.editorconfig,2,1
+2026-04-11,MuteJack/LiveSplit.AutoSplitters,/MuteJack/LiveSplit.AutoSplitters/blob/master/.github/pull_request_template.md,/blob/master/.github/pull_request_template.md,2,1
+2026-04-11,MuteJack/LiveSplit.AutoSplitters,/LiveSplit/LiveSplit.AutoSplitters/compare/master...MuteJack:LiveSplit.AutoSplitters:ells-tales-chairbound,s/compare/master...MuteJack:LiveSplit.AutoSplitters:ells-tales-chairbound,1,1
+2026-04-11,MuteJack/LiveSplit.AutoSplitters,/MuteJack/LiveSplit.AutoSplitters/blob/master/README.md,/blob/master/README.md,1,1
+2026-04-11,MuteJack/LiveSplit.AutoSplitters,/MuteJack/LiveSplit.AutoSplitters/edit/master/.github/pull_request_template.md,/edit/master/.github/pull_request_template.md,1,1
+2026-04-11,MuteJack/EllsTalesChairbound-AutoSplitter,/MuteJack/EllsTalesChairbound-AutoSplitter,Overview,5,1
+2026-04-11,MuteJack/EllsTalesChairbound-AutoSplitter,/MuteJack/EllsTalesChairbound-AutoSplitter/community/license/new,/community/license/new,3,1
+2026-04-11,MuteJack/EllsTalesChairbound-AutoSplitter,/MuteJack/EllsTalesChairbound-AutoSplitter/blob/main/EllsTalesChairbound.asl,/blob/main/EllsTalesChairbound.asl,2,1
+2026-04-11,MuteJack/EllsTalesChairbound-AutoSplitter,/MuteJack/EllsTalesChairbound-AutoSplitter/new/main,/new/main,2,1
+2026-04-11,MuteJack/EllsTalesChairbound-AutoSplitter,/MuteJack/EllsTalesChairbound-AutoSplitter/blob/main/README.md,/blob/main/README.md,1,1
+2026-04-11,MuteJack/EllsTalesChairbound-AutoSplitter,/MuteJack/EllsTalesChairbound-AutoSplitter/tree/main,/tree/main,1,1
+2026-04-11,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-/blob/main/ShortCuts (Directory)/Programs ShortCut (ProgramData).lnk,/blob/main/ShortCuts (Directory)/Programs ShortCut (ProgramData).lnk,2,1
+2026-04-11,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-/tree/main/ShortCuts (Directory),/tree/main/ShortCuts (Directory),2,1
+2026-04-11,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,Overview,1,1
+2026-04-11,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-/blob/main/ShortCuts (Directory)/Applications ShortCut.cmd,/blob/main/ShortCuts (Directory)/Applications ShortCut.cmd,1,1
+2026-04-11,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-/blob/main/ShortCuts (System Tools)/OptionalFeatures.exe.lnk,/blob/main/ShortCuts (System Tools)/OptionalFeatures.exe.lnk,1,1
+2026-04-11,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-/tree/main/CMD Batch (Short Macro),/tree/main/CMD Batch (Short Macro),1,1
+2026-04-11,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-/tree/main/ShortCuts (System Tools),/tree/main/ShortCuts (System Tools),1,1
+2026-04-11,MuteJack/MuteJack-s-Batch-and-ShortCuts-Windows-,/mutejack/mutejack-s-batch-files,Overview,1,1
