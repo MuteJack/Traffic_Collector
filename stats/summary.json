@@ -9893,6 +9893,23 @@
           "downloads": 0
         }
       ]
+    },
+    "MuteJack/Trans-To-Vostok": {
+      "total_views": 0,
+      "total_unique_visitors": 0,
+      "total_clones": 0,
+      "total_unique_cloners": 0,
+      "total_downloads": 5,
+      "daily_views": [],
+      "daily_clones": [],
+      "monthly": [
+        {
+          "month": "2026-06",
+          "views": 0,
+          "clones": 0,
+          "downloads": 5
+        }
+      ]
     }
   }
 }
