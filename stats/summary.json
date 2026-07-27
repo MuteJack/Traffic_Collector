@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26",
+  "generated": "2026-07-27",
   "repos": {
     "MuteJack/C_Percent_Language": {
       "total_views": 14,
@@ -622,6 +622,11 @@
           "date": "2026-07-25",
           "views": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "views": 0,
+          "unique": 0
         }
       ],
       "daily_clones": [
@@ -1239,6 +1244,11 @@
           "date": "2026-07-25",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -1279,7 +1289,7 @@
       "total_unique_visitors": 0,
       "total_clones": 38,
       "total_unique_cloners": 38,
-      "total_downloads": 168,
+      "total_downloads": 169,
       "daily_views": [
         {
           "date": "2026-03-25",
@@ -1883,6 +1893,11 @@
         },
         {
           "date": "2026-07-25",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-26",
           "views": 0,
           "unique": 0
         }
@@ -2492,6 +2507,11 @@
           "date": "2026-07-25",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -2529,15 +2549,15 @@
           "month": "2026-07",
           "views": 0,
           "clones": 0,
-          "downloads": 26
+          "downloads": 27
         }
       ]
     },
     "MuteJack/EllsTalesChairbound-AutoSplitter": {
       "total_views": 14,
       "total_unique_visitors": 2,
-      "total_clones": 203,
-      "total_unique_cloners": 134,
+      "total_clones": 204,
+      "total_unique_cloners": 135,
       "total_downloads": 0,
       "daily_views": [
         {
@@ -3152,6 +3172,11 @@
         },
         {
           "date": "2026-07-25",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-26",
           "views": 0,
           "unique": 0
         }
@@ -3771,6 +3796,11 @@
           "date": "2026-07-25",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 1,
+          "unique": 1
         }
       ],
       "monthly": [
@@ -3801,7 +3831,7 @@
         {
           "month": "2026-07",
           "views": 0,
-          "clones": 10,
+          "clones": 11,
           "downloads": 0
         }
       ]
@@ -3809,8 +3839,8 @@
     "MuteJack/LiveSplit.AutoSplitters": {
       "total_views": 18,
       "total_unique_visitors": 2,
-      "total_clones": 32,
-      "total_unique_cloners": 25,
+      "total_clones": 33,
+      "total_unique_cloners": 26,
       "total_downloads": 0,
       "daily_views": [
         {
@@ -4385,6 +4415,51 @@
         },
         {
           "date": "2026-07-17",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-18",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-19",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-20",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-21",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-22",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-23",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-24",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-25",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-26",
           "views": 0,
           "unique": 0
         }
@@ -4964,6 +5039,51 @@
           "date": "2026-07-17",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-18",
+          "clones": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-19",
+          "clones": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-20",
+          "clones": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-21",
+          "clones": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-22",
+          "clones": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-23",
+          "clones": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-24",
+          "clones": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-25",
+          "clones": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 1,
+          "unique": 1
         }
       ],
       "monthly": [
@@ -4994,17 +5114,17 @@
         {
           "month": "2026-07",
           "views": 0,
-          "clones": 1,
+          "clones": 2,
           "downloads": 0
         }
       ]
     },
     "MuteJack/MuckKorean": {
-      "total_views": 94,
-      "total_unique_visitors": 38,
+      "total_views": 101,
+      "total_unique_visitors": 40,
       "total_clones": 68,
       "total_unique_cloners": 50,
-      "total_downloads": 1079,
+      "total_downloads": 1095,
       "daily_views": [
         {
           "date": "2026-03-25",
@@ -5620,6 +5740,11 @@
           "date": "2026-07-25",
           "views": 7,
           "unique": 3
+        },
+        {
+          "date": "2026-07-26",
+          "views": 7,
+          "unique": 2
         }
       ],
       "daily_clones": [
@@ -6237,6 +6362,11 @@
           "date": "2026-07-25",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -6272,9 +6402,9 @@
         },
         {
           "month": "2026-07",
-          "views": 29,
+          "views": 36,
           "clones": 5,
-          "downloads": 383
+          "downloads": 399
         }
       ]
     },
@@ -6894,6 +7024,11 @@
           "date": "2026-07-25",
           "views": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "views": 0,
+          "unique": 0
         }
       ],
       "daily_clones": [
@@ -7506,6 +7641,11 @@
           "date": "2026-07-25",
           "clones": 2,
           "unique": 2
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -7544,8 +7684,8 @@
     "MuteJack/MuteJack.github.io": {
       "total_views": 2,
       "total_unique_visitors": 2,
-      "total_clones": 553,
-      "total_unique_cloners": 409,
+      "total_clones": 556,
+      "total_unique_cloners": 412,
       "total_downloads": 0,
       "daily_views": [
         {
@@ -8160,6 +8300,11 @@
         },
         {
           "date": "2026-07-25",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-26",
           "views": 0,
           "unique": 0
         }
@@ -8779,6 +8924,11 @@
           "date": "2026-07-25",
           "clones": 1,
           "unique": 1
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 3,
+          "unique": 3
         }
       ],
       "monthly": [
@@ -8809,7 +8959,7 @@
         {
           "month": "2026-07",
           "views": 0,
-          "clones": 6,
+          "clones": 9,
           "downloads": 0
         }
       ]
@@ -8817,9 +8967,9 @@
     "MuteJack/Mycopsychosys-UnOfficial-Patch": {
       "total_views": 1550,
       "total_unique_visitors": 287,
-      "total_clones": 362,
-      "total_unique_cloners": 247,
-      "total_downloads": 30243,
+      "total_clones": 363,
+      "total_unique_cloners": 248,
+      "total_downloads": 30454,
       "daily_views": [
         {
           "date": "2026-01-24",
@@ -9733,6 +9883,11 @@
         },
         {
           "date": "2026-07-25",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-26",
           "views": 0,
           "unique": 0
         }
@@ -10652,6 +10807,11 @@
           "date": "2026-07-25",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 1,
+          "unique": 1
         }
       ],
       "monthly": [
@@ -10694,17 +10854,17 @@
         {
           "month": "2026-07",
           "views": 10,
-          "clones": 6,
-          "downloads": 5484
+          "clones": 7,
+          "downloads": 5695
         }
       ]
     },
     "MuteJack/Mycopsychosys-UnOfficial_Korean_Translation": {
       "total_views": 427,
       "total_unique_visitors": 109,
-      "total_clones": 138,
-      "total_unique_cloners": 113,
-      "total_downloads": 522,
+      "total_clones": 139,
+      "total_unique_cloners": 114,
+      "total_downloads": 525,
       "daily_views": [
         {
           "date": "2026-01-24",
@@ -11618,6 +11778,11 @@
         },
         {
           "date": "2026-07-25",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-26",
           "views": 0,
           "unique": 0
         }
@@ -12537,6 +12702,11 @@
           "date": "2026-07-25",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 1,
+          "unique": 1
         }
       ],
       "monthly": [
@@ -12579,8 +12749,8 @@
         {
           "month": "2026-07",
           "views": 1,
-          "clones": 5,
-          "downloads": 78
+          "clones": 6,
+          "downloads": 81
         }
       ]
     },
@@ -13205,6 +13375,11 @@
           "date": "2026-07-25",
           "views": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "views": 0,
+          "unique": 0
         }
       ],
       "daily_clones": [
@@ -13822,6 +13997,11 @@
           "date": "2026-07-25",
           "clones": 0,
           "unique": 0
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 0,
+          "unique": 0
         }
       ],
       "monthly": [
@@ -13860,8 +14040,8 @@
     "MuteJack/Traffic_Collector": {
       "total_views": 113,
       "total_unique_visitors": 4,
-      "total_clones": 1656,
-      "total_unique_cloners": 944,
+      "total_clones": 1660,
+      "total_unique_cloners": 947,
       "total_downloads": 0,
       "daily_views": [
         {
@@ -14476,6 +14656,11 @@
         },
         {
           "date": "2026-07-25",
+          "views": 0,
+          "unique": 0
+        },
+        {
+          "date": "2026-07-26",
           "views": 0,
           "unique": 0
         }
@@ -15095,6 +15280,11 @@
           "date": "2026-07-25",
           "clones": 4,
           "unique": 3
+        },
+        {
+          "date": "2026-07-26",
+          "clones": 4,
+          "unique": 3
         }
       ],
       "monthly": [
@@ -15125,7 +15315,7 @@
         {
           "month": "2026-07",
           "views": 0,
-          "clones": 184,
+          "clones": 188,
           "downloads": 0
         }
       ]
@@ -15135,7 +15325,7 @@
       "total_unique_visitors": 0,
       "total_clones": 0,
       "total_unique_cloners": 0,
-      "total_downloads": 525,
+      "total_downloads": 539,
       "daily_views": [],
       "daily_clones": [],
       "monthly": [
@@ -15149,7 +15339,7 @@
           "month": "2026-07",
           "views": 0,
           "clones": 0,
-          "downloads": 308
+          "downloads": 322
         }
       ]
     }
